@@ -1,0 +1,54 @@
+.App {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 100vh;
+  padding: 0 20px;
+  box-sizing: border-box;
+}
+
+.buttons-container {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+button {
+  font-size: 15vh;
+  margin: 10px;
+  padding: 8px 16px;
+  cursor: pointer;
+  border: none;
+  border-radius: 8px;
+}
+
+button:hover {
+  transition: background-color 0.3s ease;
+}
+
+/* increase button */
+button:nth-child(1):hover {
+  background-color: #4caf50;
+  color: white;
+}
+
+/* decrease button */
+button:nth-child(2):hover {
+  background-color: #f44336;
+  color: white;
+}
+
+/* reset button */
+button:nth-child(3):hover {
+  background-color: #ffeb3b;
+  color: #333; 
+}
+
+h1 {
+  color: #333; 
+  margin: 0;
+  margin-right: 35vh;
+  align-items: center;
+  transition: color 0.3s ease, font-size 0.3s ease;
+  font-size: clamp(120px, calc(36px + 2vmin), 72px);
+}
